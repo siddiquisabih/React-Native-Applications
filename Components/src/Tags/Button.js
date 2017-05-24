@@ -21,7 +21,7 @@ const style = {
     text: {
         fontSize: 18,
         margin: 5,
-        color: "blue"
+        color: "blue",
     }
 }
 export default Button
