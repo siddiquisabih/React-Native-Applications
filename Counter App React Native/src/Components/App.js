@@ -29,6 +29,8 @@ class App extends Component {
                 <Text style={style.textStyle}>{this.state.counter}</Text>
                 <Button onPress={this.increment}>Increment</Button>
                 <Button onPress={this.decrement}>Decrement</Button>
+                <Text style={style.textStyle}>React Native</Text>
+
             </View>
         )
     }
