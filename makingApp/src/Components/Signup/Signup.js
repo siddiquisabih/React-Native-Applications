@@ -49,7 +49,7 @@ class Signup extends Component {
                     value={this.state.password}
                     />
 
-                <Button onPress={this.click.bind(this)}>Signup</Button>
+                <Button onPress={this.Signup.bind(this)}>Signup</Button>
 
             </View>
         )
