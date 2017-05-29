@@ -1,7 +1,7 @@
 import { Text, TouchableOpacity, onPress } from "react-native"
 import React, { Component } from "react"
 
-function Button({children, onPress}) {
+export function Button({children, onPress}) {
     return (
         <TouchableOpacity style={style.button} onPress={onPress}>
             <Text style={style.text}>
@@ -14,8 +14,7 @@ function Button({children, onPress}) {
 const style = {
     button: {
         alignSelf: "center",
-        marginLeft: 5,
-        marginRight: 5,
+        margin: 15,
         borderWidth: 1,
     },
     text: {
@@ -24,4 +23,3 @@ const style = {
         color: "blue",
     }
 }
-export default Button

@@ -1,7 +1,7 @@
 import { TextInput, View, Text } from "react-native"
 import React, { Component } from "react"
 
-function Input({ secureTextEntry, onChangeText, value, text, placeHolder }) {
+export function Input({ secureTextEntry, onChangeText, value, text, placeHolder }) {
     return (
         <View>
 
@@ -17,11 +17,12 @@ function Input({ secureTextEntry, onChangeText, value, text, placeHolder }) {
 const style = {
     text: {
         fontSize: 18,
-        margin: 5
+        margin: 5,
+        
+
     },
     inputStyle: {
         paddingRight: 5,
         paddingLeft: 5,
-    }
 }
-export default Input
+}
