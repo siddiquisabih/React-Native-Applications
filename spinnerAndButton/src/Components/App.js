@@ -5,7 +5,7 @@ class App extends Component {
     constructor() {
         super()
         this.state = {
-            loading:false
+            loading: false
         }
     }
 
@@ -22,23 +22,28 @@ class App extends Component {
 
 
     helper() {
+        console.log("state" , this.state.loading)
 
-        if (this.state.loading===true) {
+        if (this.state.loading) {
             return <Spinner size="large" />
         }
 
-        return <Button onPress={this.buttonClik.bind(this)}> clik to load</Button>
-
+        return (
+    <Button onPress={this.buttonClik.bind(this)}>
+                clik to load
+            </Button>
+        )
     }
 
     render() {
+
         return (
             <View>
                 <Header
                     text="Loading"
                 />
 
-{this.helper()}
+                {this.helper()}
             </View>
         )
     }
