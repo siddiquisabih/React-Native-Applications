@@ -1,0 +1,3 @@
+rootProject.name = 'polyline'
+
+include ':app'
