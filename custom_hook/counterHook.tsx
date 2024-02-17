@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
- 
-
-
 
 const UseCounterHook = (initialValue: number) => {
 
     const [counter, setCounter] = useState(initialValue = 0)
-
 
     const increment = () => { setCounter(counter + 1) }
     const dencrement = () => { setCounter(counter - 1) }
@@ -15,6 +11,4 @@ const UseCounterHook = (initialValue: number) => {
     return { counter, increment, dencrement, reset }
 
 }
-
-
 export default UseCounterHook;

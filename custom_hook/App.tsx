@@ -9,8 +9,6 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={styles.container}>
-
-
       <Text>Counter : {counter}</Text>
       <View style={{ marginVertical: 10 }} />
       <TouchableOpacity onPress={increment} style={styles.buttonHead}><Text style={styles.buttonText}>Increment</Text></TouchableOpacity>
